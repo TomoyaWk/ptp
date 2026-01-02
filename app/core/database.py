@@ -14,6 +14,5 @@ def get_session():
 def create_db_and_tables():
     """Create all tables in the database"""
     from sqlmodel import SQLModel
-    from app.models.user import User  # Import models to register them
     
     SQLModel.metadata.create_all(engine)
